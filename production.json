@@ -1,0 +1,15 @@
+{
+  "appSecret": "48cc6aa630030736944acbe515049ab4",
+  "pageAccessToken": "EAAYR7BAZBGycBAMpRBJblKPUDehFkLDGS8eyuZA0nLCU8AIKnQZAoRA8XSzKzKJGYuPhcAnxU8UYwxhowrpsdCCqxZAf7yEA9PHxlGyLfeMZAKxiae81F7ZAL2WtrnT07vM4I4BGFIfEnmXcTgQgZAaZAZCWDSZCHWAokkuH8KhT1cZCgZDZD",
+  "validationToken": "sdv-messenger-bot",
+  "serverURL": "http://0.0.0.0:3000/",
+  "apiURL": "https://api.yourtravelmates.com/",
+  "whitelistDomains": [
+    "https://www.yourtravelmates.com"
+  ],
+  "projectOrigin": "https://www.yourtravelmates.com",
+
+  "dialog": {
+    "projectLanding": "https://www.yourtravelmates.com/people/"
+  }
+}

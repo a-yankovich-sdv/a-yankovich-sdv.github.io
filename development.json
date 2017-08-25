@@ -1,0 +1,8 @@
+{
+  "appSecret": "03d34732a431f8839173ae392973e596",
+  "serverURL": "https://sg-webc-139:8000/",
+  "validationToken": "TOKEN",
+  "pageAccessToken": "EAAB86nCdL3MBAKuOrSOMruMnZC1dlnLx1Vucu98lsvSZAgfJ0AS4FCDLLUfaS8MnxVSGNMyR7d2GJrimuZAgBb3qZC1MhI2BfZBbbCS3NtlHpXDQdeW44VNquv0G12FcEEfi9lK1eScJpTku3isPRZC6xcDeRfMZBt1ohRmNBO612aGo1fzNzPUYzkHZAtH1TsoZD",
+
+  "apiURL": "https://api.dating.030.npdev.lan/"
+}

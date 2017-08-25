@@ -1,0 +1,82 @@
+{
+  "facebookGraphURL": "https://graph.facebook.com/v2.8/me/",
+  "appSecret": "8add7ea4232a7cee2de04eac1755339b",
+  "pageAccessToken": "EAAQd4AuSFUkBAOU7hUx4xyvK4Nn56J1OoTNkeU325IV6W8xYiuGTVt8MihepIRW3nWzZAiuzq6fylsWRTqa5wHh06eYOZCAYdZC4L42nDT3ZAsUuAkZAs1BzK778ZCr96i1AAxPus2Fwf7eW8CJ0ssvqoSq0r37b3oNt8u5WTdugZDZD",
+  "validationToken": "TOKEN",
+  "serverURL": "https://example.com:8000/",
+  "apiURL": "https://api.yourtravelmates.com/",
+  "whitelistDomains": [
+    "https://www.yourtravelmates.com"
+  ],
+  "projectOrigin": "https://www.yourtravelmates.com",
+  "dialogLifetime": 1800,
+  "afid": "203980117",
+
+  "dialog": {
+    "projectLanding": "https://www.yourtravelmates.com/people/",
+    "supportEmail": "a.ruban@sdventures.com",
+    "maximumProfiles": 5,
+    "getStartedButton": true,
+
+    "texts": {
+      "greetingMessage": "{{user_first_name}}, YourTravelMates Bot welcomes You! I will help You find a travel companion.",
+      "greetingDialogMessage": "YourTravelMates Bot welcomes You! I will help You find a travel companion.",
+      "defaultMessage": "I don't understand you",
+      "viewProfile": "View Profile",
+      "nextProfile": "Next Profile",
+      "followProject": "Follow YourTravelMates",
+      "changeSettings": "Change settings",
+      "noPeopleFound": "Sorry, no people found",
+      "needHelp": "Need Help?",
+      "support": "Write to support@yourtravelmates.com"
+    },
+
+    "questions": [
+      {
+        "type": "quickReply",
+        "question": "With whom do you want to travel?",
+        "answers": ["Male", "Female"],
+        "searchParams": [{
+          "gender": "mal"
+        }, {
+          "gender": "fem"
+        }]
+      },
+      {
+        "type": "quickReply",
+        "persistent": true,
+        "question": "What is your gender?",
+        "answers": ["Male", "Female"],
+        "searchParams": [
+          {
+            "preferences.gender": "mal"
+          },
+          {
+            "preferences.gender": "fem"
+          }
+        ]
+      },
+      {
+        "type": "quickReply",
+        "question": "People of what age do you want to travel with?",
+        "answers": ["18–24", "25–34", "35–44", "45–54", "55–64", "65–74", "75–…"],
+        "searchParams": [{"maxage": 24}, {"minage": 25, "maxage": 34}, {"minage": 35, "maxage": 44},
+          {"minage": 45, "maxage": 54}, {"minage": 55, "maxage": 64}, {"minage": 65, "maxage": 74}, {"minage": 75}]
+      },
+      {
+        "type": "quickReply",
+        "question": "From what region do you want to find travel mates?",
+        "answers": ["Europe", "Latin America", "North America", "Asia", "Australia", "Middle East", "Africa"],
+        "searchParams": [
+          {"country": ["UA", "MD", "AL", "PL", "ES", "GE", "IT", "RS", "SK", "LT", "RO", "DK", "AT", "GR", "AM", "BA", "ME", "DE", "FR", "IE", "HR", "NL", "CZ", "HU", "PT", "NO", "BG", "MK", "BE", "SE", "LV"]},
+          {"country": ["CO", "PE", "CL", "AR", "PA", "EC", "CR", "DO", "CU", "NI", "HN", "SV", "MX", "PY", "GT", "BR", "VE", "UY", "PR"]},
+          {"country": ["US", "CA"]},
+          {"country": ["KZ", "CN", "TH", "ID", "BD", "ID", "PH", "VN", "HK", "BK", "JP"]},
+          {"country": ["AU"]},
+          {"country": ["AE", "AZ", "IL", "KW", "TR", "LB", "QA", "SA", "LY"]},
+          {"country": ["MA", "GM", "NG", "KE", "TZ", "EG", "ZA", "UG", "NA", "ZM", "GH", "CI", "BF", "GN", "ET", "ST", "CM", "TG", "LR", "BJ", "TN", "SZ", "RW", "EH", "DZ"]}
+        ]
+      }
+    ]
+  }
+}
